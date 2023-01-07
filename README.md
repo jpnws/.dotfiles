@@ -13,3 +13,9 @@ eval "$(starship init bash)"
 
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ```
+
+# Notes
+
+If `echo $WSL_DISTRO_NAME` returns something, then we're in WSL.
+
+We can use this variable to conditionally set configs.
