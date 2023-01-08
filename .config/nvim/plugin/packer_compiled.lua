@@ -144,10 +144,10 @@ _G.packer_plugins = {
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["indent-blankline.nvim"] = {
+  ["indent-guides.nvim"] = {
     loaded = true,
-    path = "/home/uname/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/indent-guides.nvim",
+    url = "https://github.com/glepnir/indent-guides.nvim"
   },
   ["lsp_lines.nvim"] = {
     loaded = true,
