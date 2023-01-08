@@ -94,10 +94,30 @@ _G.packer_plugins = {
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   cmp_luasnip = {
     loaded = true,
@@ -114,6 +134,11 @@ _G.packer_plugins = {
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
   },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -128,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/lsp_lines.nvim",
     url = "https://github.com/ErichDonGubler/lsp_lines.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
+    url = "https://github.com/hrsh7th/lspkind-nvim"
   },
   ["lspsaga.nvim"] = {
     loaded = true,
@@ -182,7 +212,7 @@ _G.packer_plugins = {
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
-    url = "https://github.com/norcalli/nvim-colorizer.lua"
+    url = "https://github.com/NvChad/nvim-colorizer.lua"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -241,6 +271,11 @@ _G.packer_plugins = {
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/spaceless.nvim",
     url = "https://github.com/lewis6991/spaceless.nvim"
   },
+  tabular = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/tabular",
+    url = "https://github.com/godlygeek/tabular"
+  },
   ["telescope-fzf-native.nvim"] = {
     cond = { true },
     loaded = false,
@@ -274,6 +309,11 @@ _G.packer_plugins = {
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
+  },
   ["vim-rel-jump"] = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/vim-rel-jump",
@@ -298,6 +338,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   },
   ["which-key.nvim"] = {
     loaded = true,

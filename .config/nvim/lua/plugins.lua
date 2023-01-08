@@ -12,39 +12,40 @@ end
 local packer_bootstrap = ensure_packer()
 
 require("packer").startup(function(use)
-  use "wbthomason/packer.nvim"
-  use "folke/which-key.nvim"
-  use "numToStr/Comment.nvim"
+  use "axelvc/template-string.nvim"
+  use "buztard/vim-rel-jump"
   use "christoomey/vim-tmux-navigator"
   use "Djancyp/better-comments.nvim"
+  use "ErichDonGubler/lsp_lines.nvim"
+  use "folke/which-key.nvim"
+  use "gcmt/wildfire.vim"
   use "github/copilot.vim"
+  use "godlygeek/tabular"
+  use "jose-elias-alvarez/null-ls.nvim"
+  use "lewis6991/gitsigns.nvim"
+  use "lewis6991/spaceless.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
+  use "mbbill/undotree"
+  use "navarasu/onedark.nvim"
+  use "numToStr/Comment.nvim"
+  use "NvChad/nvim-colorizer.lua"
+  use "nvim-lualine/lualine.nvim"
+  use "nvim-treesitter/playground"
+  use "p00f/nvim-ts-rainbow"
+  use "RRethy/vim-illuminate"
+  use "tpope/vim-abolish"
   use "tpope/vim-fugitive"
   use "tpope/vim-rhubarb"
-  use "lewis6991/gitsigns.nvim"
-  use "navarasu/onedark.nvim"
-  use "nvim-lualine/lualine.nvim"
-  use "lukas-reineke/indent-blankline.nvim"
   use "tpope/vim-sleuth"
-  use "mbbill/undotree"
-  use "nvim-treesitter/playground"
+  use "tpope/vim-surround"
+  use "wbthomason/packer.nvim"
   use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
-  use "p00f/nvim-ts-rainbow"
-  use "axelvc/template-string.nvim"
-  use "jose-elias-alvarez/null-ls.nvim"
-  use "lewis6991/spaceless.nvim"
-  use "tpope/vim-surround"
-  use "norcalli/nvim-colorizer.lua"
-  use "gcmt/wildfire.vim"
-  use "tpope/vim-abolish"
-  use "buztard/vim-rel-jump"
-  use "ErichDonGubler/lsp_lines.nvim"
 
-  use { "glepnir/lspsaga.nvim", branch = "main" }
-
-  use { "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = { "nvim-lua/plenary.nvim" } }
-  use { "nvim-telescope/telescope-fzf-native.nvim", run = "make", cond = vim.fn.executable "make" == 1 }
   use { "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" }
+  use { "glepnir/lspsaga.nvim", branch = "main" }
+  use { "nvim-telescope/telescope-fzf-native.nvim", run = "make", cond = vim.fn.executable "make" == 1 }
+  use { "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = { "nvim-lua/plenary.nvim" } }
   use { "nvim-treesitter/nvim-treesitter-textobjects", after = "nvim-treesitter" }
 
   use { "nvim-treesitter/nvim-treesitter",
@@ -57,25 +58,32 @@ require("packer").startup(function(use)
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v2.x",
     requires = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
       "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons",
     }
   }
 
   use { "neovim/nvim-lspconfig",
     requires = {
-      "williamboman/mason.nvim",
-      "williamboman/mason-lspconfig.nvim",
+      "folke/neodev.nvim",
       "j-hui/fidget.nvim",
-      "folke/neodev.nvim"
+      "williamboman/mason-lspconfig.nvim",
+      "williamboman/mason.nvim",
     }
   }
   use { "hrsh7th/nvim-cmp",
     requires = {
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-cmdline",
       "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-vsnip",
+      "hrsh7th/lspkind-nvim",
+      "hrsh7th/vim-vsnip",
       "L3MON4D3/LuaSnip",
-      "saadparwaiz1/cmp_luasnip"
+      "rafamadriz/friendly-snippets",
+      "saadparwaiz1/cmp_luasnip",
     }
   }
 
