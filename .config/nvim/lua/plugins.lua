@@ -37,6 +37,8 @@ require("packer").startup(function(use)
   use "norcalli/nvim-colorizer.lua"
   use "gcmt/wildfire.vim"
   use "tpope/vim-abolish"
+  use "buztard/vim-rel-jump"
+  use "ErichDonGubler/lsp_lines.nvim"
 
   use { "glepnir/lspsaga.nvim", branch = "main" }
 

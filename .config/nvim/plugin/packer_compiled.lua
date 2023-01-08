@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["lsp_lines.nvim"] = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/lsp_lines.nvim",
+    url = "https://github.com/ErichDonGubler/lsp_lines.nvim"
+  },
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
@@ -268,6 +273,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-rel-jump"] = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/vim-rel-jump",
+    url = "https://github.com/buztard/vim-rel-jump"
   },
   ["vim-rhubarb"] = {
     loaded = true,

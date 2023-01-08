@@ -4,6 +4,6 @@ null_ls.setup {
     sources = {
         null_ls.builtins.formatting.prettier,
         null_ls.builtins.formatting.eslint,
-        null_ls.builtins.formatting.spell,
+        -- null_ls.builtins.formatting.spell,
     }
 }

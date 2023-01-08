@@ -112,3 +112,6 @@ vim.keymap.set("n", "<leader>lf", "<cmd>Lspsaga lsp_finder<cr>", { desc = "[L]SP
 vim.keymap.set("n", "<leader>lh", "<cmd>Lspsaga signature_help<cr>", { desc = "[L]SP Saga Signature [H]elp", noremap = true })
 vim.keymap.set("n", "<leader>lp", "<cmd>Lspsaga preview_definition<cr>", { desc = "[L]SP Saga [P]review Definition", noremap = true })
 vim.keymap.set("n", "<leader>lr", "<cmd>Lspsaga rename<cr>", { desc = "[L]SP Saga [R]ename", noremap = true })
+
+-- LSP Lines
+vim.keymap.set("n", "<leader>ll", require("lsp_lines").toggle, { desc = "[L]SP Toggle LSP [L]ines", noremap = true})
