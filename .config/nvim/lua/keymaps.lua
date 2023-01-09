@@ -2,10 +2,10 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Disable arrow keys.
-vim.keymap.set({ "v", "n", "i"}, "<up>", "<nop>", { desc = "Up", noremap = true })
-vim.keymap.set({ "v", "n", "i"}, "<down>", "<nop>", { desc = "Down", noremap = true })
-vim.keymap.set({ "v", "n", "i"}, "<left>", "<nop>", { desc = "Left", noremap = true })
-vim.keymap.set({ "v", "n", "i"}, "<right>", "<nop>", { desc = "Right", noremap = true })
+vim.keymap.set({ "v", "n", "i" }, "<up>", "<nop>", { desc = "Up", noremap = true })
+vim.keymap.set({ "v", "n", "i" }, "<down>", "<nop>", { desc = "Down", noremap = true })
+vim.keymap.set({ "v", "n", "i" }, "<left>", "<nop>", { desc = "Left", noremap = true })
+vim.keymap.set({ "v", "n", "i" }, "<right>", "<nop>", { desc = "Right", noremap = true })
 
 -- Toggle search term highlight.
 vim.keymap.set({ "n", "v" }, "<leader>h", ":set hlsearch!<cr>", { desc = "Toggle Search Term Highlight", noremap = true })
@@ -90,7 +90,7 @@ end, { desc = "[S]earch [C]urrent Buffer", noremap = true })
 vim.keymap.set("n", "<leader>d[", vim.diagnostic.goto_prev, { desc = "Goto Previous Diagnostic Message", noremap = true })
 vim.keymap.set("n", "<leader>d]", vim.diagnostic.goto_next, { desc = "Goto Next Diagnostic Message", noremap = true })
 vim.keymap.set("n", "<leader>de", vim.diagnostic.open_float, { desc = "Open Diagnostic Message", noremap = true })
-vim.keymap.set("n", "<leader>dq", vim.diagnostic.setloclist, { desc = "Diagnostic Setloclist" , noremap = true })
+vim.keymap.set("n", "<leader>dq", vim.diagnostic.setloclist, { desc = "Diagnostic Setloclist", noremap = true })
 
 -- Goto
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "[G]oto [D]efinition", noremap = true })
@@ -98,7 +98,7 @@ vim.keymap.set("n", "<leader>gr", require("telescope.builtin").lsp_references, {
 vim.keymap.set("n", "<leader>gi", vim.lsp.buf.implementation, { desc = "[G]oto [I]mplementation", noremap = true })
 vim.keymap.set("n", "<leader>gt", vim.lsp.buf.type_definition, { desc = "[G]oto [T]ype Definition", noremap = true })
 
--- LSP 
+-- LSP
 vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { desc = "[L]SP [R]ename", noremap = true })
 vim.keymap.set("n", "<leader>lc", vim.lsp.buf.code_action, { desc = "[L]SP [C]ode Action", noremap = true })
 
@@ -114,4 +114,7 @@ vim.keymap.set("n", "<leader>lp", "<cmd>Lspsaga preview_definition<cr>", { desc 
 vim.keymap.set("n", "<leader>lr", "<cmd>Lspsaga rename<cr>", { desc = "[L]SP Saga [R]ename", noremap = true })
 
 -- LSP Lines
-vim.keymap.set("n", "<leader>ll", require("lsp_lines").toggle, { desc = "[L]SP Toggle LSP [L]ines", noremap = true})
+vim.keymap.set("n", "<leader>ll", require("lsp_lines").toggle, { desc = "[L]SP Toggle LSP [L]ines", noremap = true })
+
+-- Neotree
+vim.keymap.set("n", "<leader>t", ":Neotree toggle=true<cr>", { desc = "Toggle Neotree", noremap = true, silent = true })
