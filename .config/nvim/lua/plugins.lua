@@ -42,6 +42,7 @@ require("packer").startup(function(use)
   use "wbthomason/packer.nvim"
   use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
+  use "akinsho/toggleterm.nvim"
 
   use { "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" }
   use { "glepnir/lspsaga.nvim", branch = "main" }
