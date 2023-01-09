@@ -19,3 +19,7 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 If `echo $WSL_DISTRO_NAME` returns something, then we're in WSL.
 
 We can use this variable to conditionally set configs.
+
+## Install zsh, ohmyzsh, zsh-autosuggestions
+
+- https://www.youtube.com/watch?v=soAwUq2cQHQ
