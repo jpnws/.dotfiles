@@ -59,7 +59,7 @@ vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "Copy to System Clipbo
 vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "Copy Line to System Clipboard", noremap = true })
 
 -- Paste text from the system clipboard.
-vim.keymap.set("n", "<leader>p", '"+p', { desc = "Paste from System Clipboard", noremap = true })
+vim.keymap.set({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from System Clipboard", noremap = true })
 
 -- Paste the last thing yanked, not deleted.
 vim.api.nvim_set_keymap("n", "<leader>o", '"0p', { desc = "Paste Last Thing Yanked", noremap = true })

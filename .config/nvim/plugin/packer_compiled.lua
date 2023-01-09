@@ -99,25 +99,20 @@ _G.packer_plugins = {
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
-  ["cmp-cmdline"] = {
-    loaded = true,
-    path = "/home/uname/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
-    url = "https://github.com/hrsh7th/cmp-cmdline"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["cmp-nvim-lua"] = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
+    url = "https://github.com/hrsh7th/cmp-nvim-lua"
+  },
   ["cmp-path"] = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
-  },
-  ["cmp-vsnip"] = {
-    loaded = true,
-    path = "/home/uname/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
-    url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   cmp_luasnip = {
     loaded = true,
@@ -128,11 +123,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
-  },
-  ["fidget.nvim"] = {
-    loaded = true,
-    path = "/home/uname/.local/share/nvim/site/pack/packer/start/fidget.nvim",
-    url = "https://github.com/j-hui/fidget.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -149,15 +139,15 @@ _G.packer_plugins = {
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/indent-guides.nvim",
     url = "https://github.com/glepnir/indent-guides.nvim"
   },
+  ["lsp-zero.nvim"] = {
+    loaded = true,
+    path = "/home/uname/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
+    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
   ["lsp_lines.nvim"] = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/lsp_lines.nvim",
     url = "https://github.com/ErichDonGubler/lsp_lines.nvim"
-  },
-  ["lspkind-nvim"] = {
-    loaded = true,
-    path = "/home/uname/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
-    url = "https://github.com/hrsh7th/lspkind-nvim"
   },
   ["lspsaga.nvim"] = {
     loaded = true,
@@ -183,11 +173,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
-  },
-  ["neodev.nvim"] = {
-    loaded = true,
-    path = "/home/uname/.local/share/nvim/site/pack/packer/start/neodev.nvim",
-    url = "https://github.com/folke/neodev.nvim"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -338,11 +323,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/uname/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
-  },
-  ["vim-vsnip"] = {
-    loaded = true,
-    path = "/home/uname/.local/share/nvim/site/pack/packer/start/vim-vsnip",
-    url = "https://github.com/hrsh7th/vim-vsnip"
   },
   ["which-key.nvim"] = {
     loaded = true,
