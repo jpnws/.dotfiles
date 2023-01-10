@@ -131,7 +131,7 @@ alias ls='exa -lah'
 
 eval "$(starship init bash)"
 
-alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias d='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 . "$HOME/.cargo/env"
 

@@ -114,7 +114,10 @@ vim.keymap.set("n", "<leader>lp", "<cmd>Lspsaga preview_definition<cr>", { desc 
 vim.keymap.set("n", "<leader>lr", "<cmd>Lspsaga rename<cr>", { desc = "[L]SP Saga [R]ename", noremap = true })
 
 -- LSP Lines
-vim.keymap.set("n", "<leader>ll", require("lsp_lines").toggle, { desc = "[L]SP Toggle LSP [L]ines", noremap = true })
+-- vim.keymap.set("n", "<leader>ll", require("lsp_lines").toggle, { desc = "[L]SP Toggle LSP [L]ines", noremap = true })
 
 -- Neotree
 vim.keymap.set("n", "<leader>t", ":Neotree toggle=true<cr>", { desc = "Toggle Neotree", noremap = true, silent = true })
+
+-- Copilot
+-- vim.keymap.set("i", "<tab>", "copilot#Accept('<cr>')", { desc = "Copilot Accept", expr = true, silent = true, script = true, noremap = true, replace_keycodes = false })
