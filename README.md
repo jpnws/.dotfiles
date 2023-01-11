@@ -2,11 +2,9 @@
 
 ## os & apps & fonts
 
-Ubuntu, Bash, Neovim, i3wm.
+arch, zsh, dwm, alacritty, starship, neovim.
 
-alacritty, starship prompt
-
-Iosevka NF - Download this from my Google Drive.
+Iosevka Nerd Font - Download this from my Google Drive.
 
 ## add the following custom configs to .bashrc.
 
