@@ -22,24 +22,6 @@ eval "$(starship init bash)"
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ```
 
-## add following config for alacritty.yml
-
-```
-font:
-  normal:
-    family: Iosevka
-    style: Regular
-  bold:
-    family: Iosevka
-    style: Bold
-  italic:
-    family: Iosevka
-    style: Italic
-  bold_italic:
-    family: Iosevka
-    style: Bold Italic
-```
-
 ## Notes
 
 If `echo $WSL_DISTRO_NAME` returns something, then we're in WSL.
