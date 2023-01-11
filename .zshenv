@@ -9,11 +9,14 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 
-export ZDOTDIR="$XDG_CACHE_HOME/zsh"
+export ZSH=$HOME/.zsh
 
-export HISTFILE="$ZDOTDIR/.zhistory"
+export HISTFILE="$ZSH/.zsh_history"
 export HISTSIZE=10000
 export SAVEHIST=10000
+
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
