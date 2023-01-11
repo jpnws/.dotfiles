@@ -1,3 +1,3 @@
-require("plugins")
-require("settings")
-require("keymaps")
+require("plug")
+require("opts")
+require("keys")
