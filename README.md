@@ -2,7 +2,7 @@
 
 ## os & apps & fonts
 
-arch, zsh, dwm, alacritty, starship, neovim.
+arch, bash, dwm, alacritty, starship, neovim.
 
 Iosevka Nerd Font - Download this from my Google Drive.
 
