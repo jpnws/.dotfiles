@@ -2,6 +2,8 @@
 
 ## os & apps & fonts
 
+exa (ls replacement)
+
 arch, alacritty, zsh, starship, dwm, neovim.
 
 Iosevka Nerd Font - Download this from my Google Drive.
