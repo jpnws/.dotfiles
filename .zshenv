@@ -11,7 +11,6 @@ export XDG_STATE_HOME=$HOME/.local/state
 
 export ZSH=$HOME/.zsh
 
-export HISTFILE="$ZSH/.zsh_history"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
@@ -25,3 +24,6 @@ export NVM_DIR="$HOME/.nvm"
 export NEOVIM_WIN_DIR=/mnt/c/Program\ Files/Neovim
 
 . "$HOME/.cargo/env"
+
+# If using Ubuntu. Necessary for marlonrichert/zsh-autocomplete plugin.
+skip_global_compinit=1
