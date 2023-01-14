@@ -27,3 +27,5 @@ export NEOVIM_WIN_DIR=/mnt/c/Program\ Files/Neovim
 
 # If using Ubuntu. Necessary for marlonrichert/zsh-autocomplete plugin.
 skip_global_compinit=1
+
+fpath+=$HOME/.zsh_functions
