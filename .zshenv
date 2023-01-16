@@ -17,9 +17,16 @@ export SAVEHIST=10000
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+if [ -d "$HOME/.nvm" ]; then
+  # export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+  export NVM_DIR="$HOME/.nvm"
+
+  # This loads nvm
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+  # This loads nvm bash_completion
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+fi
 
 export NEOVIM_WIN_DIR=/mnt/c/Program\ Files/Neovim
 
@@ -27,3 +34,5 @@ export NEOVIM_WIN_DIR=/mnt/c/Program\ Files/Neovim
 
 # If using Ubuntu. Necessary for marlonrichert/zsh-autocomplete plugin.
 skip_global_compinit=1
+
+fpath+=$HOME/.zsh_functions
