@@ -27,6 +27,7 @@ require("packer").startup(function(use)
   use "tpope/vim-sleuth" -- Heuristic shiftwidth & expandtab adjuster.
   use "tpope/vim-surround" -- Mappings to change & delete surrounding chars in pairs.
   use "windwp/nvim-ts-autotag" -- Autoclose and autorename html,tsx,vue,svelte,php,rescript.
+  use "tpope/vim-unimpaired" -- add newlines before or after cursor line.
 
   use {
     "VonHeikemen/lsp-zero.nvim",
