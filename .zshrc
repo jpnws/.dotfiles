@@ -11,3 +11,5 @@ source $ZSH/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source $ZSH/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 bindkey "^ " autosuggest-accept
+
+dex -a
