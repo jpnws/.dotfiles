@@ -1,3 +1,5 @@
 [user]
 	email = 61026408+jpnws@users.noreply.github.com
 	name = Ji Park
+[init]
+	defaultBranch = main
