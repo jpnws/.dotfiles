@@ -1,3 +1,7 @@
 # On printscreen exec flameshot
-Print
-    flameshot gui -c -p ~/screencap > /dev/null 2>&1
+print
+    flameshot gui -c -p $HOME/screencap/"$(date +%FT%H_%M_%S)".png > /dev/null 2>&1
+
+# On ctrl+prntscrn exec ffcast
+control + print
+    ffcast -q -s rec $HOME/screencap/"$(date +%FT%H_%M_%S)".mp4
