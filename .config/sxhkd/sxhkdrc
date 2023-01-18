@@ -1,7 +1,10 @@
 # On printscreen exec flameshot
-print
-    flameshot gui -c -p $HOME/screencap/"$(date +%FT%H_%M_%S)".png > /dev/null 2>&1
+Print
+    flameshot gui -c -p $HOME/screencap/"$(date +%F_%H-%M-%S)".png > /dev/null 2>&1
 
-# On ctrl+prntscrn exec ffcast
-control + print
-    ffcast -q -s rec $HOME/screencap/"$(date +%FT%H_%M_%S)".mp4
+# On ctrl printscreen exec ffcast
+# Shift+Print
+    # slop=$(slop -f "%x %y %w %h %g %i") || exit 1
+    # read -r X Y W H G ID <<< $slop
+    # ffmpeg -f x11grab -s "$W"x"$H" -i :0.0+$X,$Y -f alsa -i pulse $HOME/screencap/"$(date +%F_%H-%M-%S)".mp4
+    # ffcast -q -s rec $HOME/screencap/"$(date +%F_%H-%M-%S)".mp4
