@@ -157,10 +157,16 @@ bindsym $mod+r mode "resize"
 # }
 
 smart_borders on
+
 for_window [class="^.*"] border pixel 2
+
+# class                 border  backgr  text    indic   child_border
+client.focused          #4c7899 #285577 #ffffff #2e9ef4 #ffaa00
 
 smart_gaps on
 gaps outer 2px
 gaps inner 6px
 
 focus_follows_mouse no
+
+focus_wrapping no
