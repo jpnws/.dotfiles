@@ -196,7 +196,7 @@ require("packer").startup(function(use)
   use { "glepnir/indent-guides.nvim",
     config = function()
       require("indent_guides").setup {
-        indent_guide_size = 4;
+        indent_guide_size = 8;
         even_colors = { fg = "#1b1b1b", bg = "#1b1b1b" };
         odd_colors = { fg = "#0f0f0f", bg = "#0f0f0f" };
         exclude_filetypes = { "help", "dashboard", "NvimTree", "packer", "Neotree" };

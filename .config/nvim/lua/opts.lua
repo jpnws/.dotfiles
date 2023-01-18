@@ -45,7 +45,7 @@ vim.opt.isfname:append("@-@")
 
 -- Cursor position line and column highlighting.
 vim.opt.cursorline = true
-vim.opt.cursorcolumn = true
+vim.opt.cursorcolumn = false
 
 -- Open vim splits in a more natural direction.
 vim.opt.splitbelow = true
