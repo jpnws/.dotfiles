@@ -52,7 +52,7 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- Time in milliseconds to wait for a mapped sequence to complete.
-vim.opt.timeoutlen = 0
+vim.opt.timeoutlen = 300
 
 -- Make line numbers default
 vim.wo.number = true
