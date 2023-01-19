@@ -29,6 +29,13 @@ require("packer").startup(function(use)
   use "windwp/nvim-ts-autotag" -- Autoclose and autorename html,tsx,vue,svelte,php,rescript.
   use "tpope/vim-unimpaired" -- add newlines before or after cursor line.
 
+  use { "ggandor/leap.nvim",
+    requires = { "tpope/vim-repeat" },
+    config = function()
+      require("leap").add_default_mappings()
+    end
+  }
+
   use {
     "VonHeikemen/lsp-zero.nvim",
     requires = {
