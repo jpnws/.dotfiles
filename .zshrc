@@ -12,3 +12,4 @@ source $ZSH/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $ZSH/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source $ZSH/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+bindkey '^ ' autosuggest-accept
