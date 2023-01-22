@@ -40,12 +40,6 @@ unsetopt correct_all            # I don't care for 'suggestions' from ZSH
 typeset -U path                 # keep duplicates out of the path
 path+=(.)                       # append current directory to path (controversial)
 
-if [ -d "$HOME/.nvm" ]; then
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-fi
-
 export NEOVIM_WIN_DIR=/mnt/c/Program\ Files/Neovim
 
 . "$HOME/.cargo/env"
