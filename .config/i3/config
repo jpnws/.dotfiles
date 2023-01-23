@@ -170,3 +170,5 @@ gaps inner 6px
 focus_follows_mouse no
 
 focus_wrapping no
+
+mouse_warping output
