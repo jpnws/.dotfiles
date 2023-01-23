@@ -11,6 +11,8 @@ alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 alias winhome="cd /mnt/c/users/ji.park"
 
+alias cfg="config add -u && config commit -m '.' && config push -u origin master"
+
 source $ZSH/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 # Disable zsh-autocomplete for performance reason.
 # source $ZSH/zsh-autocomplete/zsh-autocomplete.plugin.zsh
