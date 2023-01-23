@@ -158,7 +158,7 @@ bindsym $mod+r mode "resize"
 
 smart_borders on
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 
 # class                 border  backgr  text    indic   child_border
 client.focused          #4c7899 #285577 #ffffff #2e9ef4 #ffaa00
