@@ -66,19 +66,25 @@ vim.api.nvim_set_keymap("n", "<leader>o", '"0p', { desc = "Paste Last Thing Yank
 vim.api.nvim_set_keymap("n", "<leader>O", '"0P', { desc = "Paste Last Thing Yanked", noremap = true })
 
 -- Replace a word that the cursor is on.
-vim.keymap.set("n", "<leader>r", ":%s/\\<<c-r><c-w>\\>/<c-r><c-w>/gI<left><left><left>", { desc = "Replace Word Under Cursor Global", noremap = true })
+vim.keymap.set("n", "<leader>r", ":%s/\\<<c-r><c-w>\\>/<c-r><c-w>/gI<left><left><left>",
+  { desc = "Replace Word Under Cursor Global", noremap = true })
 
 -- Make current file executable.
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<cr>", { desc = "Make Current File Executable", noremap = true, silent = true })
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<cr>",
+  { desc = "Make Current File Executable", noremap = true, silent = true })
 
 -- Search
-vim.keymap.set("n", "<leader>sr", require("telescope.builtin").oldfiles, { desc = "[S]earch [R]ecently Opened Files", noremap = true })
-vim.keymap.set("n", "<leader>se", require("telescope.builtin").buffers, { desc = "[S]earch [E]xisting Buffers", noremap = true })
+vim.keymap.set("n", "<leader>sr", require("telescope.builtin").oldfiles,
+  { desc = "[S]earch [R]ecently Opened Files", noremap = true })
+vim.keymap.set("n", "<leader>se", require("telescope.builtin").buffers,
+  { desc = "[S]earch [E]xisting Buffers", noremap = true })
 vim.keymap.set("n", "<leader>sf", require("telescope.builtin").find_files, { desc = "[S]earch [F]iles", noremap = true })
 vim.keymap.set("n", "<leader>sh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp", noremap = true })
-vim.keymap.set("n", "<leader>sw", require("telescope.builtin").grep_string, { desc = "[S]earch Current [W]ord", noremap = true })
+vim.keymap.set("n", "<leader>sw", require("telescope.builtin").grep_string,
+  { desc = "[S]earch Current [W]ord", noremap = true })
 vim.keymap.set("n", "<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep", noremap = true })
-vim.keymap.set("n", "<leader>sd", require("telescope.builtin").diagnostics, { desc = "[S]earch [D]iagnostics", noremap = true })
+vim.keymap.set("n", "<leader>sd", require("telescope.builtin").diagnostics,
+  { desc = "[S]earch [D]iagnostics", noremap = true })
 vim.keymap.set("n", "<leader>sc", function()
   require("telescope.builtin").current_buffer_fuzzy_find(require("telescope.themes").get_dropdown {
     winblend = 10,
@@ -94,7 +100,8 @@ vim.keymap.set("n", "<leader>dl", vim.diagnostic.setloclist, { desc = "Diagnosti
 
 -- Goto
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "[G]oto [D]efinition", noremap = true })
-vim.keymap.set("n", "<leader>gr", require("telescope.builtin").lsp_references, { desc = "[G]oto [R]eferences", noremap = true })
+vim.keymap.set("n", "<leader>gr", require("telescope.builtin").lsp_references,
+  { desc = "[G]oto [R]eferences", noremap = true })
 vim.keymap.set("n", "<leader>gi", vim.lsp.buf.implementation, { desc = "[G]oto [I]mplementation", noremap = true })
 vim.keymap.set("n", "<leader>gt", vim.lsp.buf.type_definition, { desc = "[G]oto [T]ype Definition", noremap = true })
 
@@ -117,7 +124,12 @@ vim.keymap.set("n", "<leader>u", ":UndotreeToggle<cr>", { desc = "Toggle Undotre
 vim.keymap.set("n", "<leader>t", ":Neotree toggle=true<cr>", { desc = "Toggle Neotree", noremap = true, silent = true })
 
 -- Copilot
-vim.keymap.set("i", "<tab>", "copilot#Accept('<cr>')", { desc = "Copilot Accept", expr = true, silent = true, script = true, noremap = true, replace_keycodes = false })
+vim.keymap.set("i", "<tab>", "copilot#Accept('<cr>')",
+  { desc = "Copilot Accept", expr = true, silent = true, script = true, noremap = true, replace_keycodes = false })
 
 -- Trouble
 vim.keymap.set("n", "<leader>dt", ":TroubleToggle<cr>", { desc = "Toggle Trouble", noremap = true, silent = true })
+
+-- Rebind the default <c-k> keybinding from nvim-lspconfig (vim.lsp.buf.signature_help)
+-- Reason: this conflicts with vim-tmux-navigator <c-k>.
+vim.keymap.set("n", "<c-k>", vim.lsp.buf.signature_help, { noremap = true, silent = true })
