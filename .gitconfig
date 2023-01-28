@@ -3,3 +3,5 @@
 	name = Ji Park
 [init]
 	defaultBranch = main
+[diff]
+	tool = vimdiff

@@ -172,3 +172,6 @@ focus_follows_mouse no
 focus_wrapping no
 
 mouse_warping output
+
+# keybinding to lock screen
+bindsym Control+Mod1+l exec "i3lock -c 020e1e"
