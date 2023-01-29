@@ -292,11 +292,6 @@ require("packer").startup(function(use)
           enable = true
         },
 
-        indent = {
-          enable = true,
-          disable = {}
-        },
-
         rainbow = {
           enable = true,
           extended_mode = true,
