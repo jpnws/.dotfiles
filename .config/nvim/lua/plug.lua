@@ -24,7 +24,7 @@ require("packer").startup(function(use)
   use "mbbill/undotree" -- Show the entire undo tree buffer.
   use "tpope/vim-fugitive" -- Vim Git client.
   use "tpope/vim-rhubarb" -- Vim GitHub client.
-  use "tpope/vim-sleuth" -- Heuristic shiftwidth & expandtab adjuster.
+  -- use "tpope/vim-sleuth" -- Heuristic shiftwidth & expandtab adjuster.
   use "tpope/vim-surround" -- Mappings to change & delete surrounding chars in pairs.
   use "windwp/nvim-ts-autotag" -- Autoclose and autorename html,tsx,vue,svelte,php,rescript.
   use "tpope/vim-unimpaired" -- add newlines before or after cursor line.
@@ -144,7 +144,7 @@ require("packer").startup(function(use)
       null_ls.setup {
         sources = {
           null_ls.builtins.formatting.prettier,
-          null_ls.builtins.formatting.eslint,
+          -- null_ls.builtins.formatting.eslint,
           -- null_ls.builtins.formatting.spell,
           null_ls.builtins.formatting.rustfmt,
         }

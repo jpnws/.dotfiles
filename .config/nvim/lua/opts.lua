@@ -7,8 +7,23 @@ vim.opt.nu = true
 -- Show lines relative to current cursor position.
 vim.opt.relativenumber = true
 
+-- When starting a new line indent based on previous line.
+vim.opt.autoindent = true
+
 -- When starting a new line indent automatically based on context.
 vim.opt.smartindent = true
+
+-- Columns of whitespace of a level of indentation.
+vim.opt.shiftwidth = 2
+
+-- Columns of whitespace of a tab character.
+vim.opt.tabstop = 2
+
+-- Columns of whitespace of a tab keypress or backspace.
+vim.opt.softtabstop = 2
+
+-- Disable tab character and tab keypresses will be spaces.
+vim.opt.expandtab = true
 
 -- Set text wrapping.
 vim.opt.wrap = true
