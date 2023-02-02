@@ -110,7 +110,7 @@ vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { desc = "[L]SP [R]ename",
 vim.keymap.set("n", "<leader>lc", vim.lsp.buf.code_action, { desc = "[L]SP [C]ode Action", noremap = true })
 
 -- Toggle undotree
-vim.keymap.set("n", "<leader>u", ":UndotreeToggle<cr>", { desc = "Toggle Undotree", noremap = true })
+-- vim.keymap.set("n", "<leader>u", ":UndotreeToggle<cr>", { desc = "Toggle Undotree", noremap = true })
 
 -- LSP saga keymaps.
 -- vim.keymap.set("n", "<leader>ld", "<cmd>Lspsaga diagnostic_jump_next<cr>", { desc = "[L]SP Saga [D]iagnostic Jump Next", noremap = true })

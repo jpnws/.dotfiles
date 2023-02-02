@@ -14,21 +14,12 @@ end
 local packer_bootstrap = ensure_packer()
 
 require("packer").startup(function(use)
-
   use "wbthomason/packer.nvim"
-
-  use "buztard/vim-rel-jump" -- Save relative row jumps in jumplist.
-  use "christoomey/vim-tmux-navigator" -- Allow nav beteween vim and tmux panes.
-  use "gcmt/wildfire.vim" -- Expanding selection keys.
   use "godlygeek/tabular" -- Aligning text by some characters like =, -, etc.
-  use "mbbill/undotree" -- Show the entire undo tree buffer.
-  use "tpope/vim-fugitive" -- Vim Git client.
-  use "tpope/vim-rhubarb" -- Vim GitHub client.
-  -- use "tpope/vim-sleuth" -- Heuristic shiftwidth & expandtab adjuster.
   use "tpope/vim-surround" -- Mappings to change & delete surrounding chars in pairs.
-  use "windwp/nvim-ts-autotag" -- Autoclose and autorename html,tsx,vue,svelte,php,rescript.
-  use "tpope/vim-unimpaired" -- add newlines before or after cursor line.
+  use "tpope/vim-unimpaired" -- Add newlines before or after cursor line.
 
+  -- Jump to any position in visible editor area with 2-char search pattern.
   use { "ggandor/leap.nvim",
     requires = { "tpope/vim-repeat" },
     config = function()
@@ -103,17 +94,9 @@ require("packer").startup(function(use)
   use { "nvim-telescope/telescope.nvim",
     branch = "0.1.x",
     requires = { "nvim-lua/plenary.nvim" },
-    run = function()
-      pcall(require("telescope").load_extension, "fzf")
-    end,
     config = function()
       require("telescope").setup {}
     end
-  }
-
-  use { "nvim-telescope/telescope-fzf-native.nvim",
-    run = "make",
-    cond = vim.fn.executable "make" == 1
   }
 
   use { "jose-elias-alvarez/null-ls.nvim",
@@ -143,20 +126,21 @@ require("packer").startup(function(use)
       local null_ls = require("null-ls")
       null_ls.setup {
         sources = {
-          null_ls.builtins.formatting.prettier,
+          null_ls.builtins.formatting.prettierd,
           -- null_ls.builtins.formatting.eslint,
           -- null_ls.builtins.formatting.spell,
           null_ls.builtins.formatting.rustfmt,
+          null_ls.builtins.formatting.fixjson
         }
       }
     end
   }
 
-  use { "windwp/nvim-autopairs",
-    config = function()
-      require("nvim-autopairs").setup {}
-    end
-  }
+  -- use { "windwp/nvim-autopairs",
+  --   config = function()
+  --     require("nvim-autopairs").setup {}
+  --   end
+  -- }
 
   use { "navarasu/onedark.nvim",
     config = function()
@@ -174,31 +158,26 @@ require("packer").startup(function(use)
       require("onedark").load()
     end
   }
-
+  {
+  -- Automatically strip trailing whitespace as you are editing.
   use { "lewis6991/spaceless.nvim",
     config = function()
       require("spaceless").setup {}
     end
   }
 
+  -- Shows mapped keys on the bottom upon keypresses.
   use { "folke/which-key.nvim",
     config = function()
       require("which-key").setup {}
     end
   }
 
-  use { "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
-    config = function()
-      require("trouble").setup {}
-    end
-  }
-
-  use { "axelvc/template-string.nvim",
-    config = function()
-      require("template-string").setup {}
-    end
-  }
+  -- use { "axelvc/template-string.nvim",
+  --   config = function()
+  --     require("template-string").setup {}
+  --   end
+  -- }
 
   use { "glepnir/indent-guides.nvim",
     config = function()
@@ -231,20 +210,20 @@ require("packer").startup(function(use)
     end
   }
 
-  use { "github/copilot.vim",
-    config = function()
-      vim.g.copilot_assume_mapped = true
-      vim.g.copilot_no_tab_map = true
-      vim.g.copilot_filetypes = {
-        ["*"] = false,
+  -- use { "github/copilot.vim",
+  --   config = function()
+  --     vim.g.copilot_assume_mapped = true
+  --     vim.g.copilot_no_tab_map = true
+  --     vim.g.copilot_filetypes = {
+  --       ["*"] = false,
         -- ["javascript"] = true,
         -- ["typescript"] = true,
         -- ["lua"] = true,
         -- ["rust"] = true,
         -- ["python"] = true,
-      }
-    end
-  }
+  --     }
+  --   end
+  -- }
 
   use { "numToStr/Comment.nvim",
     config = function()
@@ -266,44 +245,7 @@ require("packer").startup(function(use)
     end
   }
 
-  use { "folke/todo-comments.nvim",
-    requires = "nvim-lua/plenary.nvim",
-    config = function()
-      require("todo-comments").setup {}
-    end
-  }
-
-  use { "nvim-treesitter/nvim-treesitter",
-    run = function()
-      pcall(require("nvim-treesitter.install").update { with_sync = true })
-    end,
-    config = function()
-      require("nvim-treesitter.configs").setup {
-        ensure_installed = { "lua", "rust", "typescript", "python", "help", "toml", "yaml" },
-        auto_install = true,
-        sync_install = false,
-
-        highlight = {
-          enable = true,
-          additional_vim_regex_highlighting = false,
-        },
-
-        autotag = {
-          enable = true
-        },
-
-        rainbow = {
-          enable = true,
-          extended_mode = true,
-          max_file_lines = nil,
-        },
-      }
-    end
-  }
-
-  use { "nvim-treesitter/nvim-treesitter-textobjects",
-    after = "nvim-treesitter"
-  }
+  use { "nvim-treesitter/nvim-treesitter" }
 
   use {
     "nvim-neo-tree/neo-tree.nvim",
