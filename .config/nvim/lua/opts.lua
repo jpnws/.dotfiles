@@ -14,13 +14,13 @@ vim.opt.relativenumber = true
 vim.opt.smartindent = true
 
 -- Columns of whitespace of a level of indentation.
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 2
 
 -- Columns of whitespace of a tab character.
-vim.opt.tabstop = 4
+vim.opt.tabstop = 2
 
 -- Columns of whitespace of a tab keypress or backspace.
-vim.opt.softtabstop = 4
+vim.opt.softtabstop = 2
 
 -- Disable tab character and tab keypresses will be spaces.
 vim.opt.expandtab = true
